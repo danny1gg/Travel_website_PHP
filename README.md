@@ -1,6 +1,7 @@
 # Travel_website_PHP
 Travel_website_PHP
-![]Watch Demo
+Watch Demo
+
 [![Watch the video](https://i.imgur.com/vKb2F1B.png)](https://youtu.be/tX5dGK6vCDM)
 ![](imgs/screenshoots/travel_1.jpg)
 ![](imgs/screenshoots/travel_2.jpg)
