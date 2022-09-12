@@ -1,0 +1,458 @@
+body {
+	margin: 0;
+	/*background: #D3F2D3;*/
+	background: url('../imgs/w_road.jpg');
+	background-size: 100%;
+	background-attachment: fixed;
+}
+
+#body_index {
+	background: url('../imgs/w_night_sky.jpg');
+}
+
+select {
+	height: 35px;
+}
+
+a {
+	text-decoration: none;
+}
+
+tr {
+	height: 35px;
+}
+
+table, tr, td {
+	margin: 0;
+	height: 20;
+	padding: 0;
+}
+
+td {
+	padding: 2px;
+	vertical-align: top;
+}
+.centered_text {
+	text-align: center;
+}
+
+.white_text {
+	color: white;
+}
+
+.blue_text {
+	color: blue;
+}
+
+.green_text {
+	color: green;
+}
+
+.red_text {
+	color: red;
+}
+
+.t_small {
+	font-size: 20px;
+}
+
+/* ------ Navbar ------- */
+#logo {
+	position: relative;
+	top: -10px;
+	left: 100px;
+	line-height: -10px;
+	padding: 12px 10px;
+	user-select: none;
+}
+#airplane_logo {
+	filter:  hue-rotate(40deg) saturate(400%) brightness(85%);
+}
+
+#airplane_logo:hover {
+	filter: hue-rotate(20deg);
+}
+
+#airplane_animation {
+	position: relative;
+	left: 55%;
+	top: 10px;
+	padding: 20px;
+	filter:  brightness(95%);
+}
+
+@keyframes airplane {
+	from{width: 70px; margin-left: 10px; transform: rotate(0deg) opacity(90%);}
+	to {width: 110px; margin-left: 150px; transform: rotate(10deg);}
+}
+
+#airplane_animation {
+	animation-name:  airplane;
+	animation-duration: 7s;
+	animation-fill-mode: forwards;
+}
+
+#nav {
+	position: fixed;
+	display: flex;
+	width: 100%;
+	height: 40px;
+	top: 0px;
+	margin: 0;
+	background: white;
+	z-index: 1;
+}
+
+#nav_ul {
+	position: absolute;
+	display: inline;
+	margin: 0;
+	padding: 0px;
+	right: 100px;
+}
+
+#nav_ul li {
+	position: relative;
+	list-style-type: none;
+	float: left;
+	padding-right: 10px;
+}
+
+#nav_ul a {
+	user-select: none;
+	text-decoration: none;
+	color: #1A4F96;
+}
+
+#nav_ul a:hover {
+	color: lightgreen;
+}
+
+#nav_ul a:active {
+	color: blue;
+}
+
+#nav_btn {
+	width: fit-content;
+	height: 20px;
+	background: #11A1B7;
+	padding: 10px;
+	margin-right: 20px;
+	color: #fff;
+	user-select: none;
+}
+
+#nav_btn:hover {
+	background: #2372B7;
+	cursor: pointer;
+}
+
+#nav_btn:active {
+	background: #1A39B7;
+}
+
+#logout_btn {
+	width: fit-content;
+	height: 20px;
+	background: #D85343;
+	padding: 10px;
+	margin-right: 10px;
+	color: #fff;
+}
+
+/* ------ Container ------- */
+#main_container {
+	position: relative;
+	display: flex;
+	top: 5px;
+	min-width: fit-content;
+	width: 1020px;
+	height: 700px;
+	margin: auto;
+	padding: 10px;
+}
+
+#container {
+	position: relative;
+	width: 700px;
+	height: 700px;
+	top: 50px;
+	margin: auto;
+	background: url('../imgs/w_from_airplane.jpg');
+	background-size: cover;
+	border-radius: 20px;
+	box-shadow: 2px 2px 20px 2px #3F4F75;
+}
+
+#container_user_profile, #container_after_registration {
+	position: relative;
+	top: 50px;
+	width: 680px;
+	height: 680px;
+	margin: auto;
+	padding: 20px;
+	background: #D5EADB;
+	background-size: cover;
+	border-radius: 20px;
+	box-shadow: 2px 2px 20px 2px grey;
+}
+
+#container_after_registration {
+	height: 110px;
+	top:  150px;
+	background: none;
+}
+
+#btn_edit_info {
+	position: relative;
+	width: 100px;
+	height: 20px;
+	left: 10px;
+	background: #21BFB5;
+	color: white;
+	border-radius: 7px;
+	border: none;
+	box-shadow: 1px 2px 10px 2px #9CABAF;
+}
+
+#sidebar_right {
+	position: relative;
+	top: 50px;
+	width: 230px;
+	height: 680px;
+	right: 10px;
+	margin-left: 10px;
+	padding: 10px;
+	border-radius: 20px;
+	background: url('../imgs/w_sky.jpg');
+	background-size: 100% 120%;
+	box-shadow: 2px 2px 20px 2px #3F4F75;
+}
+
+ol .t_destination {
+	position: relative;
+	bottom: 10px;
+	color: yellow;
+	text-decoration: none;
+	font-size: 20px;
+	padding: 25px;
+
+}
+
+#error {
+	color: #EA0000;
+	background: #DBFF94;
+	width: fit-content;
+	padding: 0px;
+	margin: auto;
+}
+
+#destination_content {
+	position: relative;
+	width: fit-content;
+	margin: auto;
+}
+
+#payment_content {
+	padding: 0px 20px;
+	margin-top: 0px;
+}
+
+#sector_payment{
+	position: absolute;
+	display: inline;
+	height: 50px;
+	width: 95%;
+	left: 10px;
+	bottom: 0;
+	margin: 0;
+	padding: 10px;
+}
+
+#purchase_content {
+	padding: 40px;
+}
+
+#p_right {
+	position: absolute;
+	float: right;
+	bottom: 20px;
+	right: 20px;
+}
+
+.form_input {
+	height: 29px;
+}
+
+.form_input, #destination, #submit_btn {
+	border: 3px solid #F7D217;
+	border-radius: 2px;
+}
+
+#submit_btn {
+	position: relative;
+	top:  0px;
+	margin: 0;
+	padding: 0px;
+}
+
+#submit_btn:hover {
+	cursor: pointer;
+	width: 120%;
+}
+
+#form_register {
+	position: relative;
+	float: right;
+}
+
+#form_register input, #form_register select {
+	position: relative;
+	margin: 10px;
+	padding: 10px;
+	width: 250px;
+	right: 15px;
+}
+
+#btn_submit {
+	position: relative;
+	width: 100px;
+	height: 30px;
+	left: 10px;
+	background: #21BFB5;
+	color: white;
+	border-radius: 7px;
+	border: none;
+	box-shadow: 1px 2px 10px 2px #2C7EB5;
+}
+
+#btn_submit:hover, #btn_edit_info:hover {
+	background: #229BED;
+	cursor: pointer;
+}
+/*
+background: linear-gradient(#23BF96, #28A6BF, #852EBF);
+*/
+
+/* ========== Profile Hotel ========  */
+#container_hotel_profile {
+	position: relative;
+	top: 50px;
+	width: 700px;
+	height: 430px;
+	margin: auto;
+	background: #CCD6DB;
+	background-size: cover;
+	box-shadow: 2px 2px 5px 1px grey;
+}
+
+#container_offer {
+	position: relative;
+	display: flex;
+	top:  -40px;
+	left: 10px;
+	width: 100%;
+	overflow: visible;
+}
+
+#hotel_details {
+	position: relative;
+	display: block;
+	width: 50%;
+	height: 100px;
+	float: left;
+}
+
+#transportation_details {
+	position: relative;
+	display: block;
+	left: 20px;
+	width: 40%;
+	height: 150px;
+	overflow: visible;
+	float: right;
+}
+
+#sector_bottom {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	height: 50px;
+	width: 100%;
+	bottom: 0;
+	margin: 0;
+	padding: 0;
+	background: #A9C9DB;
+}
+
+
+#room_detail{
+	position: relative;
+	left: 10px;
+	color: red;
+}
+
+
+
+#price_sector {
+	width: fit-content;
+	font-size: 30px;
+	margin-left: 20px;
+}
+
+#hotel_info {
+	position: relative;
+	width: 90%;
+	height: 60px;
+	margin: auto;
+	padding: 10px;
+	border: 1px solid black;
+	background: white;
+}
+
+#btn_book, #btn_book_disabled {
+	width: fit-content;
+	height: 20px;
+	padding: 10px;
+	margin-right: 20px;
+	color: #fff;
+	border-radius: 5px;
+	border: none;
+	box-shadow: 1px 1px 1px 1px grey;
+	user-select: none;
+}
+
+#btn_book_disabled {
+	background: grey;
+}
+
+#btn_book {
+	background: #11A1B7;
+}
+
+#btn_book:hover {
+	background: #2372B7;
+	cursor: pointer;
+}
+
+#btn_book:active {
+	background: #1A39B7;
+}
+
+/* ========= Footer ========= */
+#footer {
+	position: fixed;
+	display: inline;
+	bottom: 0px;
+	width: 100%;
+	height: 15px;
+	background: rgb(190, 214, 232);
+	text-align: center;
+	padding: 5px;
+}
+#footer p {
+	position: relative;
+	bottom: 17px;
+	color: blue;
+}
