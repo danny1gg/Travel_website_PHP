@@ -1,4 +1,4 @@
-Travel website made with PHP- PDO
+Travel website made with PHP, PDO
 
 To start using this project you will need the database with the tables and colums, 
 you will find them in the 'db_travel_sql'. Just follow the steps below:
@@ -31,5 +31,12 @@ you will find them in the 'db_travel_sql'. Just follow the steps below:
 7. open the file 'connection.php' with a texteditor,
 8. on line 4 enter your database password between the double qoutes.
 
-FINISH! You can now use this project with its database.
+FINISH! 
+
+You can now use this project with its database.
+
+
+
+
+
 
